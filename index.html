@@ -17,21 +17,19 @@
           </form>
         </div>
         <div class="bookmark">
-          <a href="#">Закладки:</a>
+          <a href="#">Закладки: 0</a>
         </div>
         <div class="basket">
-          <a href="#">Корзина:</a>
+          <a href="#">Корзина: 0</a>
         </div>
         <div class="order">
-        <a href="#">Оформить заказ</a>
+          <a href="#">Оформить заказ</a>
         </div>
       </div>
     </div>
     <div class="header-middleblock">
       <div class="container">
-        <div class="header-description">
-          <p class="header-text">Интернет-магазинстроительных материалов и инструментов для ремонта</p>
-        </div>
+        <p class="header-text">Интернет-магазинстроительных материалов и инструментов для ремонта</p>
         <div class="header-contacts">
           <p class="header-phone">+7(812)555-05-55</p>
           <p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -45,7 +43,7 @@
     <nav class="menu container">
       <ul class="menu-list">
         <li class="menu-item">
-          <a href="#" class="menu-link">Главная</a>
+          <a class="menu-link">Главная</a>
         </li>
         <li class="menu-item">
           <a href="#" class="menu-link">Компания</a>
@@ -67,18 +65,18 @@
   </header>
   <main class="main-content">
     <section class="catalog container">
-      <div class="column1">
-        <article class="catalog-part matirials">
+      <div class="column-left">
+        <div class="catalog-part matirials">
           <h1 class="article-name">Материалы</h1>
           <a href="#" class="article-btn">На любой вкус</a>
           <img src="img/matirials.jpg" width="#" height="#" alt="Matirials">
-        </article>
-        <article class="catalog-part tools">
+        </div>
+        <div class="catalog-part tools">
           <h1 class="article-name">Инструмент</h1>
           <a href="#" class="article-btn">На все случаи</a>
           <img src="img/tools.jpg" width="#" height="#" alt="Tools">
-        </article>
-        <article class="catalog-sliders toggle">
+        </div>
+        <div class="catalog-sliders toggle">
           <input type="radio" id="btn-1" name="toggle" checked>
           <input type="radio" id="btn-2" name="toggle">
           <div class="slider-controls">
@@ -95,24 +93,24 @@
             <p class="slider-description">соседям на радость</p>
             <a href="#" class="slider-btn">Открыть каталог</a>
           </div>
-        </article>
+        </div>
       </div>
-      <div class="column2">
-        <article class="catalog-part equipment">
+      <div class="column-right">
+        <div class="catalog-part equipment">
           <h1 class="article-name">Техника</h1>
           <a href="#" class="article-btn">Для стройки</a>
           <img src="img/equipment.jpg" width="#" height="#" alt="Equipment">
-        </article>
-        <article class="catalog-part sale">
+        </div>
+        <div class="catalog-part sale">
           <h1 class="article-name">Скидки 50%</h1>
           <a href="#" class="article-btn">На 350 товаров</a>
           <img src="img/sale.jpg" width="#" height="#" alt="Sale">
-        </article>
-        <article class="catalog-part elivery">
+        </div>
+        <div class="catalog-part delivery">
           <h1 class="article-name">Доставка/h1>
           <a href="#" class="article-btn">Бесплатно</a>
           <img src="img/delivery.jpg" width="#" height="#" alt="Delivery">
-        </article>
+        </div>
       </div>
     </section>
     <section class="catalog container">
@@ -253,84 +251,60 @@
         <a href="#" class="contact-btn">Заблудились? Напишите нам!</a>
       </div>
     </div>
-    <footer class="main-footer container">
-      <div class="footer-upblock">
-        <div class="footer-upblock-left">
-          <div class="logo">
-            <p class="logo-text">Техномарт</p>
-          </div>
-          <div class="footer-contact">
-            <p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-            <p class="footer-phone">+7 (812) 555-05-55</p>
-          </div>
-        </div>
-        <div class="footer-upblock-right">
-          <nav class="footer-menu-top">
-            <ul class="footer-menu-list">
-              <li class="footer-menu-item">
-                <a href="#" class="footer-menu-link">Компания</a>
-              </li>
-              <li class="footer-menu-item">
-                <a href="catalog.html" class="footer-menu-link">Новости</a>
-              </li>
-              <li class="footer-menu-item">
-                <a href="#" class="footer-menu-link">Каталог</a>
-              </li>
-              <li class="footer-menu-item">
-                <a href="#" class="footer-menu-link">Доставка</a>
-              </li>
-              <li class="footer-menu-item">
-                <a href="#" class="footer-menu-link">Контакты</a>
-              </li>
-            </ul>
-          </nav>
-          <nav class="footer-menu-down">
-            <ul class="footer-menu-list">
-              <li class="footer-menu-item">
-                <a href="#" class="footer-menu-link">Материалы</a>
-              </li>
-              <li class="footer-menu-item">
-                <a href="catalog.html" class="footer-menu-link">Техника</a>
-              </li>
-              <li class="footer-menu-item">
-                <a href="#" class="footer-menu-link">Инструмет</a>
-              </li>
-              <li class="footer-menu-item">
-                <a href="#" class="footer-menu-link">Спецпредложения</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-      <div class="footer-downblock">
-          <p class="copyright">© 2010–2016 Компания «Техномарт» Все права защищены</p>
-        <div class="social-network">
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-        </div>
-          <p class="callback-text">Обратная связь: <a href="#" class="callback-mail">mail@htmlacademy.ru</a></p>
-          <p class="madeby-text">Разработано — <a href="#" class="madeby-site">htmlacademy.ru</a></p>
-      </div>
-    </footer>
-    <div class="write-us">
-      <button class="write-us-close" type="button" title="Закрыть">Закрыть</button>
-      <form class="letter-form" action="https://echo.htmlacademy.ru" method="post">
-        <div class=form-data>
-          <label for="name">Ваше имя:</label>
-          <input id="name" class="icon-user" type="text" name="name" placeholder="Представтесь, пожалуйста" required>
-        </div>
-        <div class="form-data">
-          <label for="email"> Ваш e-mail:</label>
-          <input id="email" class="icon-email" type="text"  name="email" placeholder="Для отправки ответа" required>
-        </div>
-        <label for="comment-field">Текст письма:</label>
-        <textarea name="comment" id="comment-field" cols="10" rows="10">В свободной форме</textarea>
-        <div class="send-form">
-          <input type="submit" value="Отправить">
-        </div>
-      </form>
-    </div>
   </main>
+  <footer class="main-footer container">
+    <div class="footer-topblock">
+      <div class="footer-logo">
+        <a href="#" class="logo-text">Техномарт</a>
+      </div>
+      <div class="footer-links">
+        <a href="#" class="footer-link-white">Компания</a>
+        <a href="#" class="footer-link-white">Новости</a>
+        <a href="#" class="ffooter-link-white">Каталог</a>
+        <a href="#" class="footer-link-white">Доставка</a>
+        <a href="#" class="footer-link-white">Контакты</a>
+      </div>
+    </div>
+    <div class="footer-middleblock">
+      <div class="footer-contact">
+        <span class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+        <span class="footer-phone">+7 (812) 555-05-55</span>
+      </div>
+      <div class="footer-links">
+        <a href="#" class="footer-menu-link">Материалы</a>
+        <a href="#" class="footer-menu-link">Техника</a>
+        <a href="#" class="footer-menu-link">Инструмет</a>
+        <a href="#" class="footer-menu-link">Спецпредложения</a>
+      </div>
+    </div>
+    <div class="footer-bottomblock">
+      <span class="copyright">© 2010–2016 Компания «Техномарт» Все права защищены</span>
+      <div class="social-network">
+        <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+        <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+      </div>
+      <span class="callback-text">Обратная связь: <a href="#" class="callback-mail">mail@htmlacademy.ru</a></span>
+      <span class="madeby-text">Разработано — <a href="#" class="madeby-site">htmlacademy.ru</a></span>
+    </div>
+  </footer>
+  <div class="write-us">
+    <button class="write-us-close" type="button" title="Закрыть">Закрыть</button>
+    <form class="letter-form" action="https://echo.htmlacademy.ru" method="post">
+      <div class=form-data>
+        <label for="name">Ваше имя:</label>
+        <input id="name" class="icon-user" type="text" name="name" placeholder="Представтесь, пожалуйста" required>
+      </div>
+      <div class="form-data">
+        <label for="email"> Ваш e-mail:</label>
+        <input id="email" class="icon-email" type="text"  name="email" placeholder="Для отправки ответа" required>
+      </div>
+      <label for="comment-field">Текст письма:</label>
+      <textarea name="comment" id="comment-field" cols="10" rows="10">В свободной форме</textarea>
+      <div class="send-form">
+        <input type="submit" value="Отправить">
+      </div>
+    </form>
+  </div>
 </body>
 </html>
