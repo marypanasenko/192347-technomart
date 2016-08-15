@@ -1,9 +1,7 @@
 body {
   font-size: 13px;
-  line-height:24px;
+  line-height: 24px;
   font-weight: 400;
-  font-family: 'Cuprum', 'PT Sans', sans-serif;
-  margin: 0 auto;
-  padding: 0;
-  min-width: 1200px;
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
