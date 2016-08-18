@@ -30,14 +30,14 @@
         </div>
       </div>
     </div>
-    <div class="header-middleblock">
+    <div class="header-middleblock clearfix">
       <div class="container">
         <p class="header-text">Интернет-магазин строительных материалов и инструментов для ремонта</p>
         <div class="header-contacts">
           <p class="header-phone">+7 (812) 555-05-55</p>
           <p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
-        <div class="user-block">
+        <div class="user-block clearfix">
           <a href="#" class="singin">Войти</a>
           <a href="#" class="signup">Регистрация</a>
         </div>
@@ -122,9 +122,7 @@
             <a href="#" class="buy">Купить</a>
             <a href="#" class="bookmark">В закладки</a>
           </div>
-          <div class="catalog-item-image">
-            <img src="img/BOSCHBFG9000.jpg" width="184" height="164" alt="BOSCHBFG9000">
-          </div>
+          <img src="img/BOSCHBFG9000.jpg" width="220" height="180" alt="BOSCHBFG9000">
           <h2 class="item-name">Перфоратор BOSCH BFG 9000</h2>
           <span class="old-price">32500 Р</span>
           <a href="#" class="new-price">25500 Р</a>
@@ -134,7 +132,7 @@
             <a href="#" class="buy">Купить</a>
             <a href="#" class="bookmark">В закладки</a>
           </div>
-          <img src="img/BOSCHBFG3000.jpg" width="127" height="112" alt="BOSCHBFG3000">
+          <img src="img/BOSCHBFG3000.jpg" width="220" height="180" alt="BOSCHBFG3000">
           <h2 class="item-name">Перфоратор BOSCH BFG 3000</h2>
           <span class="old-price">22500 Р</span>
           <a href="#" class="new-price">15500 Р</a>
@@ -144,7 +142,7 @@
             <a href="#" class="buy">Купить</a>
             <a href="#" class="bookmark">В закладки</a>
           </div>
-          <img src="img/BOSCHBFG6000.jpg" width="144" height="128" alt="BOSCHBFG6000">
+          <img src="img/BOSCHBFG6000.jpg" width="220" height="180" alt="BOSCHBFG6000">
           <h2 class="item-name">Перфоратор BOSCH BFG 6000</h2>
           <span class="old-price">30500 Р</span>
           <a href="#" class="new-price">25500 Р</a>
@@ -154,7 +152,7 @@
             <a href="#" class="buy">Купить</a>
             <a href="#" class="bookmark">В закладки</a>
           </div>
-          <img src="img/BOSCHBFG2000.jpg" width="127" height="112" alt="BOSCHBFG2000">
+          <img src="img/BOSCHBFG2000.jpg" width="220" height="180" alt="BOSCHBFG2000">
           <h2 class="item-name">Перфоратор BOSCH BFG 6000</h2>
           <span class="old-price"></span>
           <a href="#" class="new-price">15500 Р</a>
@@ -246,7 +244,7 @@
       <div class="footer-logo">
         <a href="#" class="logo-text">Техномарт</a>
       </div>
-      <div class="footer-links">
+      <div class="footer-links clearfix">
         <a href="#" class="footer-link-white">Компания</a>
         <a href="#" class="footer-link-white">Новости</a>
         <a href="#" class="footer-link-white">Каталог</a>
@@ -259,11 +257,11 @@
         <span class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
         <span class="footer-phone">+7 (812) 555-05-55</span>
       </div>
-      <div class="footer-links">
-        <a href="#" class="footer-menu-link">Материалы</a>
-        <a href="#" class="footer-menu-link">Техника</a>
-        <a href="#" class="footer-menu-link">Инструмет</a>
-        <a href="#" class="footer-menu-link">Спецпредложения</a>
+      <div class="footer-links clearfix">
+        <a href="#" class="footer-link-yellow">Материалы</a>
+        <a href="#" class="footer-link-yellow">Техника</a>
+        <a href="#" class="footer-link-yellow">Инструмет</a>
+        <a href="#" class="footer-link-yellow">Спецпредложения</a>
       </div>
     </div>
     <div class="footer-bottomblock">
@@ -280,16 +278,20 @@
   <div class="write-us">
     <button class="write-us-close" type="button" title="Закрыть">Закрыть</button>
     <form class="letter-form" action="https://echo.htmlacademy.ru" method="post">
-      <div class=form-data>
-        <label for="name">Ваше имя:</label>
-        <input id="name" class="icon-user" type="text" name="name" placeholder="Представтесь, пожалуйста" required>
+      <div class="form-datas">
+        <div class=form-data-name>
+          <label for="name">Ваше имя:</label>
+          <input id="name" class="icon-user" type="text" name="name" placeholder="Представтесь, пожалуйста" required>
+        </div>
+        <div class="form-data-email">
+          <label for="email"> Ваш e-mail:</label>
+          <input id="email" class="icon-email" type="text"  name="email" placeholder="Для отправки ответа" required>
+        </div>
+        <div class="form-data-comment">
+          <label for="comment-field">Текст письма:</label>
+          <textarea name="comment" id="comment-field" cols="10" rows="10">В свободной форме</textarea>
+        </div>
       </div>
-      <div class="form-data">
-        <label for="email"> Ваш e-mail:</label>
-        <input id="email" class="icon-email" type="text"  name="email" placeholder="Для отправки ответа" required>
-      </div>
-      <label for="comment-field">Текст письма:</label>
-      <textarea name="comment" id="comment-field" cols="10" rows="10">В свободной форме</textarea>
       <div class="send-form">
         <input type="submit" value="Отправить">
       </div>
