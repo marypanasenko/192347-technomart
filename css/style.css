@@ -3,4 +3,270 @@ body {
   line-height: 24px;
   font-weight: 400;
   font-family: "PT Sans", "Arial", sans-serif;
+
+}
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+.header-topblock {
+  font-size: 0;
+}
+.logo {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 24px;
+  line-height: 24px;
+  width: 220px;
+}
+.logo-text {
+  margin-left: 55px;
+  font-family: "Cuprum", "Arial", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.search {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 17px;
+  line-height: 18px;
+  min-width: 270px;
+}
+.search-form input {
+  width: 270px;
+  font-family: "Cuprum", "Arial", sans-serif;
+  text-decoration: none;
+}
+.bookmark, .basket, .order {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 17px;
+  line-height: 18px;
+  min-width: 150px;
+}
+.bookmark a, .basket a, .order a{
+  font-family: "Cuprum", "Arial", sans-serif;
+  text-decoration: none;
+}
+.header-middleblock {
+  font-size: 0;
+}
+.header-text, .header-contacts, .user-block {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  font-size: 17px;
+  font-family: "Cuprum", "Arial", sans-serif;
+
+}
+.header-text {
+  width: 205px;
+  margin-left: 50px;
+  margin-top: 0;
+  vertical-align: top;
+  font-size: 16px;
+  line-height: 23px;
+  font-style: italic;
+}
+.header-contacts {
+  width: 270px;
+  margin-left: 65px;
+}
+.header-phone {
+  margin: 0;
+  width: 270px;
+  height: 45px;
+  font-size: 21px;
+  line-height: 18pt;
+  border: 3px solid white;
+  box-sizing: border-box;
+}
+.header-address {
+  margin: 0;
+  font-size: 14px;
+  line-height: 24pt;
+}
+.user-block {
+  font-size: 0;
+}
+.singin {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 70px;
+  width: 120px;
+  height: 45px;
+  text-decoration: none;
+  font-size: 21px;
+  line-height: 18px;
+}
+.signup {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 10px;
+  width: 150px;
+  height: 45px;
+  text-decoration: none;
+  font-size: 21px;
+  line-height: 18px;
+}
+.menu {
+}
+.menu-list {
+  font-size: 0:
+}
+.menu-item {
+  display: inline-block;
+  list-style: none;
+}
+.menu-link {
+  text-decoration: none;
+}
+.main-content {
+
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.catalog-content {
+  margin-bottom: 53px;
+}
+.column-left {
+  float: left;
+  width: 620px;
+  font-size: 0;
+}
+.column-right {
+  float: right;
+  width: 300px;
+  font-size: 0;
+}
+.catalog-part {
+  display: inline-block;
+  width: 300px;
+  min-height: 123px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.catalog-part:last-child {
+  margin-bottom: 0;
+}
+.materials {
+  margin-right: 20px;
+  background-color: #f6b22d;
+  background-image: url(../img/materials.png);
+  background-position: 90% 50%;
+  background-repeat: no-repeat;
+}
+.tools{
+  background-color: #4aafde;
+  background-image: url(../img/tools.png);
+  background-position: 90% 50%;
+  background-repeat: no-repeat;
+}
+.catalog-sliders {
+  display: inline-block;
+  width: 620px;
+  height: 266px;
+  vertical-align: top;
+  font-size: 14px;
+}
+.slide-1{
+  height: 266px;
+  background-image: url(../img/slide1.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+.slider-name {
+  display: inline-block;
+}
+.slide-2 {
+  display: none;
+  height: 266px;
+  background-image: url(../img/slide2.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+.popular-producers {
+  margin-bottom: 85px;
+}
+.popular-block {
+  height: 89px;
+  margin-bottom: 20px;
+}
+.popular-heading {
+  float: left;
+  min-width: 480px;
+  margin: 0;
+}
+.popular-btn {
+  float: right;
+  min-width: 253px;
+}
+.actions {
+  display: none;
+}
+.index-catalog-items, .catalog-items {
+  font-size: 0;
+}
+.catalog-item {
+  display: inline-block;
+  margin-right: 20px;
+  vertical-align: top;
+  font-size: 18px;
+  max-width: 220px;
+}
+.index-catalog-items .catalog-item:last-child {
+  margin-right: 0;
+}
+.catalog-items .catalog-item:nth-child(3n) {
+  margin-right: 0;
+}
+.item-name {
+  width: 220px;
+  font-size:18px;
+  line-height: 20px;
+}
+.producers {
+  font-size: 0;
+
+}
+.producer-link {
+  display: inline-block;
+  vertical-align: top;
+  width: 220px;
+  height: 145px;
+  margin-right: 20px;
+  font-size: 18px;
+  position: relative;
+}
+.producer-link:nth-child(4n) {
+  margin-right: 0;
+}
+.producer-link img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.benifits-slider {
+  font-size: 0;
+}
+.benifits-slider-controls {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 21px;
+  line-height: 30px;
+}
+.slider-delivery, .slider-guarantee, .slider-credit{
+  display: inline-block;
+  vertical-align: top;
+  font-size: 13px;
+  line-height: 24px;
+
+}
+
+* {
+  outline: 1px dashed red;
 }
