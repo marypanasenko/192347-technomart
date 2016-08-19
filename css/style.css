@@ -49,15 +49,7 @@ body {
   text-decoration: none;
 }
 .header-middleblock {
-  font-size: 0;
-}
-.header-text, .header-contacts, .user-block {
-  display: inline-block;
-  vertical-align: top;
-  margin: 0;
-  font-size: 17px;
   font-family: "Cuprum", "Arial", sans-serif;
-
 }
 .header-text {
   float: left;
@@ -92,9 +84,10 @@ body {
 .user-block {
   float: right;
   max-width: 300px;
+  font-size: 0;
 }
 .singin {
-  float: right;
+  display: inline-block;;
   width: 120px;
   height: 45px;
   text-decoration: none;
@@ -102,28 +95,28 @@ body {
   line-height: 18px;
 }
 .signup {
-  float: right;
+  display: inline-block;
   width: 150px;
   height: 45px;
+  margin-left: 10px;
   text-decoration: none;
   font-size: 21px;
   line-height: 18px;
 }
 
-.menu {
-}
 .menu-list {
-  font-size: 0:
+  font-size: 0;
+  list-style: none;
 }
 .menu-item {
   display: inline-block;
-  list-style: none;
 }
 .menu-link {
+  font-size: 17px;
+  line-height: 17px;
   text-decoration: none;
 }
 .main-content {
-
 }
 .clearfix::after {
   content: "";
