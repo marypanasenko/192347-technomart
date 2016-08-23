@@ -200,8 +200,16 @@ body {
   min-width: 253px;
 }
 .actions {
-  display: none;
+  display: ;
   background-color: #ffffff;
+  width: 135px;
+  height: 83px;
+  font-size: 0;
+}
+.actions a {
+  display: inline-block;
+  font-size: 14px;
+  width: 135px;
 }
 .index-catalog-items, .catalog-items {
   font-size: 0;
@@ -497,6 +505,83 @@ body {
   font-size: 13px;
   line-height: 18px;
   text-decoration: none;
+}
+
+.form-producers, .supply-producers {
+  font-size: 0;
+}
+.form-heading {
+  font-size: 17px;
+  line-height: 30px;
+}
+.form-item {
+  display: block;
+  font-size: 14px;
+}
+.sort {
+  font-size: 0;
+}
+.sort-text{
+  display: inline-block;
+  font-size: 13px;
+  line-height: 18px;
+}
+.sort-menu {
+  display: inline-block;
+  font-size: 0;
+  width: 380px;
+}
+.sort-menu-item {
+  display: inline-block;
+  font-size: 13px;
+  line-height: 18px;
+}
+.triangles {
+  display: inline-block;
+  font-size: 0;
+}
+.triangle-up, .triangle-down {
+}
+/*cart*/
+.cart {
+  display: none;
+  width: 620px;
+  height: 282px;
+  position: relative;
+}
+.cart-text {
+  font-size: 30px;
+  line-height: 18px;
+  padding-left: 179px;
+}
+.cart-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.cart-message {
+  width: 620px;
+  height: 170px;
+
+}
+.cart-buttons {
+  width: 620px;
+  height: 112px;
+  font-size: 0;
+
+}
+.cart-buttons a {
+  display: inline-block;
+  vertical-align: top;
+  width: 220px;
+  height: 38px;
+  margin-left: 80px;
+  margin-top: 37px;
+  font-size: 14px;
+  line-height: 18px;
+}
+.cart-buttons a:last-child{
+  margin-left: 20px;
 }
 * {
   outline: 1px dashed red;
