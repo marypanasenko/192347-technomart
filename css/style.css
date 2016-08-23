@@ -110,6 +110,7 @@ body {
 }
 .menu-item {
   display: inline-block;
+  vertical-align: top;
 }
 .menu-link {
   font-size: 17px;
@@ -357,9 +358,15 @@ body {
 .social-network {
   display: inline-block;
   vertical-align: top;
-  font-size: 14px;
+  font-size: 0;
   width: 131px;
   margin-right: 119px;
+}
+.social-btn {
+  display: inline-block;
+  font-size: 14px;
+  vertical-align: top;
+
 }
 .callback-text {
   display: inline-block;
@@ -477,6 +484,19 @@ body {
 .sort-catalog {
   float: right;
   width: 700px;
+}
+.breadcrumb {
+  font-size: 0;
+  list-style: none;
+}
+.breadcrumb-item {
+  display: inline-block;
+  vertical-align: top;
+}
+.breadcrumb-link {
+  font-size: 13px;
+  line-height: 18px;
+  text-decoration: none;
 }
 * {
   outline: 1px dashed red;
