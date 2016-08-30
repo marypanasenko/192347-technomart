@@ -1266,6 +1266,7 @@ fieldset {
 .sort-text{
   display: inline-block;
   margin-left: 18px;
+  margin-right: 140px;
   margin-top: 10px;
   margin-bottom: 10px;
   font-size: 13px;
@@ -1275,18 +1276,154 @@ fieldset {
 .sort-menu {
   display: inline-block;
   font-size: 0;
-  width: 380px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .sort-menu-item {
   display: inline-block;
+  vertical-align: top;
+}
+.by-price, .by-type, .by-function {
   font-size: 13px;
   line-height: 18px;
+  color: #c4c1bb;
+  text-transform: uppercase;
+  text-decoration: underline dotted #ee3643;
+}
+.by-price:hover, .by-type:hover, .by-function:hover {
+  color: #000;
+  text-decoration: underline #ee3643;
+}
+.by-price:active, .by-type:active, .by-function:active {
+  color: #ee3643;
+  text-decoration: none;
+}
+
+.by-price {
+  margin-right: 71px;
+}
+.by-type {
+  margin-right: 65px;
+}
+.by-function {
+  margin-right: 46px;
 }
 .triangles {
   display: inline-block;
   font-size: 0;
+  vertical-align: middle;
 }
 .triangle-up, .triangle-down {
+  display: inline-block;
+}
+.triangle-up {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid #c6c2bd;
+}
+.triangle-down {
+  margin-right: 21px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 10px solid #c6c2bd;
+}
+.triangle-up:hover {
+  border-top: 10px solid #000000;
+}
+.triangle-down:hover {
+  border-bottom: 10px solid #000000;
+}
+.triangle-up:active {
+  border-top: 10px solid #ee3643;
+}
+.triangle-down:active {
+  border-bottom: 10px solid #ee3643;
+}
+.pagination {
+ font-size: 0;
+ padding-bottom: 60px;
+}
+.active-page {
+  display: inline-block;
+  width: 38px;
+  margin-right: 10px;
+  font-size: 13px;
+  background-color: #ee3643;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: middle;
+  text-align: center;
+  outline: none;
+  border-radius: 5px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+.page2, .page3 {
+  display: inline-block;
+  width: 38px;
+  margin-right: 10px;
+  font-size: 13px;
+  border: 1px solid #e5e5e5;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: middle;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  box-sizing: border-box;
+}
+.next {
+  display: inline-block;
+  width: 140px;
+  margin-right: 10px;
+  font-size: 13px;
+  border: 1px solid #e5e5e5;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: middle;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  box-sizing: border-box;
+}
+.page2:hover, .page3:hover, .next:hover {
+  border: 1px solid #bdc6ca;
+}
+.page2:active, .page3:active, .next:active {
+  border: 1px solid #ee3643;
+}
+.about-perforators {
+  background-color: #f2f6f8;
+}
+.about-perforators-title {
+  padding-top: 65px;
+  padding-bottom: 25px;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-family: "Cuprum", "Arial", sans-serif;
+  color: #000000;
+  font-weight: 400;
+}
+.about-perforators-text {
+  padding-bottom: 70px;
+  margin: 0;
+  font-size: 13px;
+  line-height: 30px;
+  color: #000000;
 }
 /*cart*/
 .cart {
@@ -1329,6 +1466,222 @@ fieldset {
 .cart-buttons a:last-child{
   margin-left: 20px;
 }
+/*SPRITE*/
+.sprite {
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  display: block;
+}
+.sprite--icon-bookmark-active {
+    width: 14px;
+    height: 16px;
+    background-position: -5px -5px;
+}
+
+.sprite--icon-bookmark-focus {
+    width: 14px;
+    height: 16px;
+    background-position: -29px -5px;
+}
+
+.sprite--icon-bookmark-hover {
+    width: 14px;
+    height: 16px;
+    background-position: -53px -5px;
+}
+
+.sprite--icon-check-off {
+    width: 23px;
+    height: 23px;
+    background-position: -77px -5px;
+}
+
+.sprite--icon-check-off-block {
+    width: 23px;
+    height: 23px;
+    background-position: -110px -5px;
+}
+
+.sprite--icon-check-off-hover {
+    width: 23px;
+    height: 23px;
+    background-position: -143px -5px;
+}
+
+.sprite--icon-check-on {
+    width: 27px;
+    height: 23px;
+    background-position: -5px -38px;
+}
+
+.sprite--icon-check-on-block {
+    width: 27px;
+    height: 23px;
+    background-position: -42px -38px;
+}
+
+.sprite--icon-check-on-hover {
+    width: 27px;
+    height: 23px;
+    background-position: -79px -38px;
+}
+
+.sprite--icon-circle {
+    width: 25px;
+    height: 25px;
+    background-position: -116px -38px;
+}
+
+.sprite--icon-circle-block {
+    width: 25px;
+    height: 25px;
+    background-position: -151px -38px;
+}
+
+.sprite--icon-circle-dot {
+    width: 25px;
+    height: 25px;
+    background-position: -5px -73px;
+}
+
+.sprite--icon-circle-dot-block {
+    width: 25px;
+    height: 25px;
+    background-position: -40px -73px;
+}
+
+.sprite--icon-circle-dot-hover {
+    width: 25px;
+    height: 25px;
+    background-position: -75px -73px;
+}
+
+.sprite--icon-circle-hover {
+    width: 25px;
+    height: 25px;
+    background-position: -110px -73px;
+}
+
+.sprite--icon-facebook {
+    width: 10px;
+    height: 18px;
+    background-position: -176px -5px;
+}
+
+.sprite--icon-home {
+    width: 15px;
+    height: 12px;
+    background-position: -145px -73px;
+}
+
+.sprite--icon-instagramm {
+    width: 17px;
+    height: 17px;
+    background-position: -170px -73px;
+}
+
+.sprite--icon-left {
+    width: 22px;
+    height: 40px;
+    background-position: -145px -100px;
+}
+
+.sprite--icon-login {
+    width: 20px;
+    height: 17px;
+    background-position: -177px -100px;
+}
+
+.sprite--icon-login-active {
+    width: 20px;
+    height: 17px;
+    background-position: -5px -127px;
+}
+
+.sprite--icon-login-hover {
+    width: 20px;
+    height: 17px;
+    background-position: -35px -127px;
+}
+
+.sprite--icon-phone {
+    width: 19px;
+    height: 19px;
+    background-position: -65px -127px;
+}
+
+.sprite--icon-right {
+    width: 22px;
+    height: 40px;
+    background-position: -94px -127px;
+}
+
+.sprite--icon-right-breadcrumbs {
+    width: 8px;
+    height: 12px;
+    background-position: -186px -33px;
+}
+
+.sprite--icon-search {
+    width: 17px;
+    height: 17px;
+    background-position: -177px -127px;
+}
+
+.sprite--icon-search-active {
+    width: 17px;
+    height: 17px;
+    background-position: -5px -154px;
+}
+
+.sprite--icon-search-focus {
+    width: 17px;
+    height: 17px;
+    background-position: -32px -154px;
+}
+
+.sprite--icon-search-hover {
+    width: 17px;
+    height: 17px;
+    background-position: -126px -154px;
+}
+
+.sprite--icon-user {
+    width: 20px;
+    height: 18px;
+    background-position: -153px -154px;
+}
+
+.sprite--icon-user-active {
+    width: 20px;
+    height: 18px;
+    background-position: -5px -182px;
+}
+
+.sprite--icon-user-hover {
+    width: 20px;
+    height: 18px;
+    background-position: -35px -182px;
+}
+
+.sprite--icon-vk {
+    width: 20px;
+    height: 12px;
+    background-position: -65px -182px;
+}
+
+.sprite-new {
+    width: 60px;
+    height: 59px;
+    background-position: -95px -182px;
+}
+
+.sprite-slider-shadow {
+    width: 10px;
+    height: 272px;
+    background-position: -207px -5px;
+}
+
 /** {
   outline: 1px dashed red;
 }*/
