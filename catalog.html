@@ -34,7 +34,7 @@
       <div class="container clearfix">
         <p class="header-text">Интернет-магазин строительных материалов и инструментов для ремонта</p>
         <div class="header-contacts">
-          <p class="header-phone">+7(812)555-05-55</p>
+          <p class="header-phone">+7 (812) 555-05-55</p>
           <p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
         <div class="user-block">
@@ -43,17 +43,16 @@
           <a href="#" class="member-ledger">Личный кабинет</a>
         </div>
       </div>
-    </div>
     <nav class="menu container">
       <ul class="menu-list">
         <li class="menu-item">
-          <a href="#" class="menu-link">Главная</a>
+          <a class="menu-link">Главная</a>
         </li>
         <li class="menu-item">
           <a href="#" class="menu-link">Компания</a>
         </li>
         <li class="menu-item">
-          <a class="menu-link">Каталог</a>
+          <a href="catalog.html" class="menu-link">Каталог</a>
         </li>
         <li class="menu-item">
           <a href="#" class="menu-link">Спецпредложения</a>
@@ -66,6 +65,7 @@
         </li>
       </ul>
     </nav>
+  </div>
   </header>
   <main class="main-content">
     <div class="container">
@@ -84,15 +84,15 @@
         </li>
       </ul>
       <div class="product-group">
-        <h1>Перфораторы</h1>
+        <h1 class="product-group-title">Перфораторы</h1>
       </div>
       <section class="catalog clearfix">
         <div class="filter">
-          <div class="filter-text">
-            <span>Фильтр</span>
+          <div class="filter-title-container">
+            <span class="filter-title">Фильтр</span>
           </div>
           <form class="filter-form" action="form.php" method="get">
-            <fieldset>
+            <fieldset class="form-range">
               <legend class="form-heading">Цена:</legend>
               <div class="range-filter">
                 <div class="range-controls">
@@ -127,7 +127,7 @@
         </div>
         <div class="sort-catalog">
           <div class="sort">
-            <span class="sort-text">Сортировать:</span>
+            <span class="sort-text">Сортировка:</span>
             <ul class="sort-menu">
               <li class="sort-menu-item">
                 <a class="by-price" href="#">По цене</a>
@@ -252,40 +252,46 @@
       </div>
     </div>
   </main>
-  <footer class="main-footer container">
+  <footer class="main-footer">
     <div class="footer-topblock clearfix">
-      <div class="footer-logo">
-        <a href="#" class="logo-text">Техномарт</a>
-      </div>
-      <div class="footer-links clearfix">
-        <a href="#" class="footer-link-white">Компания</a>
-        <a href="#" class="footer-link-white">Новости</a>
-        <a href="#" class="footer-link-white">Каталог</a>
-        <a href="#" class="footer-link-white">Доставка</a>
-        <a href="#" class="footer-link-white">Контакты</a>
+      <div class="container">
+        <div class="footer-logo logo-conditions">
+          <a href="#" class="footer-logo-text">Техномарт</a>
+        </div>
+        <div class="footer-links clearfix">
+          <a href="#" class="footer-link-white">Компания</a>
+          <a href="#" class="footer-link-white">Новости</a>
+          <a href="#" class="footer-link-white">Каталог</a>
+          <a href="#" class="footer-link-white">Доставка</a>
+          <a href="#" class="footer-link-white">Контакты</a>
+        </div>
       </div>
     </div>
     <div class="footer-middleblock clearfix">
-      <div class="footer-contact">
-        <span class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
-        <span class="footer-phone">+7 (812) 555-05-55</span>
-      </div>
-      <div class="footer-links clearfix">
-        <a href="#" class="footer-link-yellow">Материалы</a>
-        <a href="#" class="footer-link-yellow">Техника</a>
-        <a href="#" class="footer-link-yellow">Инструмет</a>
-        <a href="#" class="footer-link-yellow">Спецпредложения</a>
+      <div class="container">
+        <div class="footer-contact">
+          <span class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+          <span class="footer-phone">+7 (812) 555-05-55</span>
+        </div>
+        <div class="footer-links clearfix">
+          <a href="#" class="footer-link-yellow">Материалы</a>
+          <a href="#" class="footer-link-yellow">Техника</a>
+          <a href="#" class="footer-link-yellow">Инструмет</a>
+          <a href="#" class="footer-link-yellow">Спецпредложения</a>
+        </div>
       </div>
     </div>
     <div class="footer-bottomblock">
-      <span class="copyright">© 2010–2016 Компания «Техномарт» Все права защищены</span>
-      <div class="social-network">
-        <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-        <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+      <div class="container">
+        <span class="copyright">© 2010–2016 Компания «Техномарт» Все права защищены</span>
+        <div class="social-network">
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+        </div>
+        <span class="callback-text">Обратная связь: <a href="#" class="callback-mail">mail@htmlacademy.ru</a></span>
+        <span class="madeby-text">Разработано — <a href="#" class="madeby-site">htmlacademy.ru</a></span>
       </div>
-      <span class="callback-text">Обратная связь: <a href="#" class="callback-mail">mail@htmlacademy.ru</a></span>
-      <span class="madeby-text">Разработано — <a href="#" class="madeby-site">htmlacademy.ru</a></span>
     </div>
   </footer>
   <div class="cart">
