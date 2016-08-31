@@ -59,13 +59,41 @@ body {
   background-color: #293449;
   border-style: none;
   color: #ffffff;
+  background: transparent url("../img/sprite.png") no-repeat;
+  background-position: -2px -1721px;
 }
+
+
+/*.search-form input {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: transparent url("../img/sprite.png") no-repeat;
+  width: 17px;
+  height: 17px;
+  background-position: -177px -127px;
+  z-index: 2;
+}*/
+
+/*.search-form:hover::before {
+  width: 17px;
+  height: 17px;
+  background-position: -126px -154px;
+}
+.search-form:focus::before {
+  width: 17px;
+  height: 17px;
+  background-position: -32px -154px;
+}*/
 .search-form input:hover {
   background-color: #212a3a;
+  background-position: -2px -1892px;
 }
 .search-form input:focus {
   background-color: #ffffff;
   color: #000000;
+  background-position: -2px -1835px;
 }
 .search-form input::-webkit-input-placeholder {
   color:#ffffff;
@@ -109,10 +137,52 @@ body {
 .bookmark a {
   padding-left: 45px;
   box-sizing: border-box;
+  position: relative;
+}
+.bookmark a::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 18px;
+  background: transparent url("../img/sprite.png") no-repeat;
+  width: 14px;
+  height: 16px;
+  background-position: -20px -244px;
+}
+.bookmark a:hover::before {
+  width: 14px;
+  height: 16px;
+  background-position: -20px -300px;
+}
+.bookmark a:active::before {
+  width: 14px;
+  height: 16px;
+  background-position: -20px -188px;
 }
 .basket a {
   padding-left: 50px;
   box-sizing: border-box;
+  position: relative;
+}
+.basket a::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 18px;
+  background: transparent url("../img/sprite.png") no-repeat;
+  width: 17px;
+  height: 16px;
+  background-position: -20px -76px;
+}
+.basket a:hover::before {
+  width: 17px;
+  height: 16px;
+  background-position: -20px -132px;
+}
+.basket a:active::before {
+  width: 17px;
+  height: 16px;
+  background-position: -20px -20px;
 }
 .order a {
   text-align: center;
@@ -160,6 +230,17 @@ body {
   border: 3px solid white;
   box-sizing: border-box;
   color: #e9292a;
+  position: relative;
+}
+.header-phone::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 13px;
+  background: transparent url("../img/sprite.png") no-repeat;
+  width: 19px;
+  height: 19px;
+  background-position: -20px -1542px;
 }
 .header-address {
   margin: 0;
@@ -185,6 +266,23 @@ body {
   box-sizing: border-box;
   background-color: #ffffff;
   color: #000000;
+  position: relative;
+}
+.singin::before {
+  content: "";
+  position: absolute;
+  background: transparent url("../img/sprite.png") no-repeat;
+  top: 14px;
+  left: 15px;
+  width: 20px;
+  height: 17px;
+  background-position: -20px -1371px;
+}
+.singin:hover::before {
+  background-position: -20px -1485px;
+}
+.singin:active::before {
+  background-position: -20px -1428px;
 }
 .signup {
   display: inline-block;
@@ -272,7 +370,16 @@ body {
 .catalog-part:last-child {
   margin-bottom: 0;
 }
-.new {
+.new::after {
+  content: "";
+  top: 0;
+  right: 0;
+  position: absolute;
+  z-index: 100;
+  background: transparent url("../img/sprite.png") no-repeat;
+  width: 60px;
+  height: 59px;
+  background-position: -20px -2187px;
 }
 .article-name {
   margin-left: 23px;
@@ -392,6 +499,28 @@ body {
   border-radius: 50%;
   cursor: pointer;
 }
+.slider-controls label::before {
+  content: "";
+  top: -93px;
+  left: -185px;
+  position: absolute;
+  z-index: 100;
+  background: transparent url("../img/sprite.png") no-repeat;
+  width: 22px;
+  height: 40px;
+  background-position: -20px -1291px;
+}
+.slider-controls label::after {
+  content: "";
+  top: -93px;
+  left: 368px;
+  position: absolute;
+  z-index: 100;
+  background: transparent url("../img/sprite.png") no-repeat;
+  width: 22px;
+  height: 40px;
+  background-position: -20px -1601px;
+}
 #btn-1:checked ~ .slides .slide-1 {
   left: 0;
 }
@@ -407,14 +536,10 @@ body {
 #btn-2:checked ~ .slides .slide-2 {
   left: 0;
 }
-
-
 #btn-1:checked ~ .slider-controls label[for="btn-1"],
 #btn-2:checked ~ .slider-controls label[for="btn-2"] {
   background-color: #ee3643;
 }
-
-
 .slider-name {
   display: inline-block;
   margin-top: 25px;
@@ -1142,18 +1267,20 @@ body {
   padding-bottom: 12px;
   padding-left: 45px;
   margin-bottom: 8px;
-  background-color: #fff;
   color: #000;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 21px;
   text-decoration: none;
   box-sizing: border-box;
+  background: #fff url("../img/sprite.png") no-repeat;
+  background-position: -5px -1948px;
 }
 .user:hover {
-
+  background-position: -5px -2064px;
 }
 .user:active {
   color: #cacaca;
+  background-position: -5px -2006px;
 }
 .orders {
   display: inline-block;
@@ -1472,214 +1599,232 @@ fieldset {
   background-repeat: no-repeat;
   display: block;
 }
+.sprite--icon-basket-active {
+    width: 17px;
+    height: 16px;
+    background-position: -20px -20px;
+}
+
+.sprite--icon-basket-focus {
+    width: 17px;
+    height: 16px;
+    background-position: -20px -76px;
+}
+
+.sprite--icon-basket-hover {
+    width: 17px;
+    height: 16px;
+    background-position: -20px -132px;
+}
+
 .sprite--icon-bookmark-active {
     width: 14px;
     height: 16px;
-    background-position: -5px -5px;
+    background-position: -20px -188px;
 }
 
 .sprite--icon-bookmark-focus {
     width: 14px;
     height: 16px;
-    background-position: -29px -5px;
+    background-position: -20px -244px;
 }
 
 .sprite--icon-bookmark-hover {
     width: 14px;
     height: 16px;
-    background-position: -53px -5px;
+    background-position: -20px -300px;
 }
 
 .sprite--icon-check-off {
     width: 23px;
     height: 23px;
-    background-position: -77px -5px;
+    background-position: -20px -356px;
 }
 
 .sprite--icon-check-off-block {
     width: 23px;
     height: 23px;
-    background-position: -110px -5px;
+    background-position: -20px -419px;
 }
 
 .sprite--icon-check-off-hover {
     width: 23px;
     height: 23px;
-    background-position: -143px -5px;
+    background-position: -20px -482px;
 }
 
 .sprite--icon-check-on {
     width: 27px;
     height: 23px;
-    background-position: -5px -38px;
+    background-position: -20px -545px;
 }
 
 .sprite--icon-check-on-block {
     width: 27px;
     height: 23px;
-    background-position: -42px -38px;
+    background-position: -20px -608px;
 }
 
 .sprite--icon-check-on-hover {
     width: 27px;
     height: 23px;
-    background-position: -79px -38px;
+    background-position: -20px -671px;
 }
 
 .sprite--icon-circle {
     width: 25px;
     height: 25px;
-    background-position: -116px -38px;
+    background-position: -20px -734px;
 }
 
 .sprite--icon-circle-block {
     width: 25px;
     height: 25px;
-    background-position: -151px -38px;
+    background-position: -20px -799px;
 }
 
 .sprite--icon-circle-dot {
     width: 25px;
     height: 25px;
-    background-position: -5px -73px;
+    background-position: -20px -864px;
 }
 
 .sprite--icon-circle-dot-block {
     width: 25px;
     height: 25px;
-    background-position: -40px -73px;
+    background-position: -20px -929px;
 }
 
 .sprite--icon-circle-dot-hover {
     width: 25px;
     height: 25px;
-    background-position: -75px -73px;
+    background-position: -20px -994px;
 }
 
 .sprite--icon-circle-hover {
     width: 25px;
     height: 25px;
-    background-position: -110px -73px;
+    background-position: -20px -1059px;
 }
 
 .sprite--icon-facebook {
     width: 10px;
     height: 18px;
-    background-position: -176px -5px;
+    background-position: -20px -1124px;
 }
 
 .sprite--icon-home {
     width: 15px;
     height: 12px;
-    background-position: -145px -73px;
+    background-position: -20px -1182px;
 }
 
 .sprite--icon-instagramm {
     width: 17px;
     height: 17px;
-    background-position: -170px -73px;
+    background-position: -20px -1234px;
 }
 
 .sprite--icon-left {
     width: 22px;
     height: 40px;
-    background-position: -145px -100px;
+    background-position: -20px -1291px;
 }
 
 .sprite--icon-login {
     width: 20px;
     height: 17px;
-    background-position: -177px -100px;
+    background-position: -20px -1371px;
 }
 
 .sprite--icon-login-active {
     width: 20px;
     height: 17px;
-    background-position: -5px -127px;
+    background-position: -20px -1428px;
 }
 
 .sprite--icon-login-hover {
     width: 20px;
     height: 17px;
-    background-position: -35px -127px;
+    background-position: -20px -1485px;
 }
 
 .sprite--icon-phone {
     width: 19px;
     height: 19px;
-    background-position: -65px -127px;
+    background-position: -20px -1542px;
 }
 
 .sprite--icon-right {
     width: 22px;
     height: 40px;
-    background-position: -94px -127px;
+    background-position: -20px -1601px;
 }
 
 .sprite--icon-right-breadcrumbs {
     width: 8px;
     height: 12px;
-    background-position: -186px -33px;
+    background-position: -20px -1681px;
 }
 
 .sprite--icon-search {
     width: 17px;
     height: 17px;
-    background-position: -177px -127px;
+    background-position: -20px -1733px;
 }
 
 .sprite--icon-search-active {
     width: 17px;
     height: 17px;
-    background-position: -5px -154px;
+    background-position: -20px -1790px;
 }
 
 .sprite--icon-search-focus {
     width: 17px;
     height: 17px;
-    background-position: -32px -154px;
+    background-position: -20px -1847px;
 }
 
 .sprite--icon-search-hover {
     width: 17px;
     height: 17px;
-    background-position: -126px -154px;
+    background-position: -20px -1904px;
 }
 
 .sprite--icon-user {
     width: 20px;
     height: 18px;
-    background-position: -153px -154px;
+    background-position: -20px -1961px;
 }
 
 .sprite--icon-user-active {
     width: 20px;
     height: 18px;
-    background-position: -5px -182px;
+    background-position: -20px -2019px;
 }
 
 .sprite--icon-user-hover {
     width: 20px;
     height: 18px;
-    background-position: -35px -182px;
+    background-position: -20px -2077px;
 }
 
 .sprite--icon-vk {
     width: 20px;
     height: 12px;
-    background-position: -65px -182px;
+    background-position: -20px -2135px;
 }
 
 .sprite-new {
     width: 60px;
     height: 59px;
-    background-position: -95px -182px;
+    background-position: -20px -2187px;
 }
 
 .sprite-slider-shadow {
     width: 10px;
     height: 272px;
-    background-position: -207px -5px;
+    background-position: -20px -2286px;
 }
 
 /** {
