@@ -1120,6 +1120,7 @@ body {
 }
 .footer-bottomblock {
   padding-top: 35px;
+  padding-bottom: 30px;
   font-size: 0;
   background-color: #293449;
 }
@@ -1146,6 +1147,54 @@ body {
   font-size: 14px;
   vertical-align: top;
 
+}
+.social-btn {
+  width: 40px;
+  height: 40px;
+  background-color: #212a3a;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  display: inline-block;
+  font-size: 0;
+  vertical-align: top;
+  text-align: left;
+  margin-right: 5px;
+  position: relative;
+}
+.social-btn:nth-child(3n){
+  margin-right: 0;
+}
+.social-btn:hover{
+  background-color: #ee3643;
+}
+.social-btn:active{
+  background-color: #ee3643;
+}
+
+.social-btn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: transparent url("../img/sprite.png") no-repeat;
+  transform: translate(-50%, -50%);
+}
+
+.social-btn-vk::before {
+  width: 20px;
+  height: 12px;
+  background-position: -20px -2135px;
+}
+.social-btn-fb::before {
+  width: 10px;
+  height: 18px;
+  background-position: -20px -1124px;
+}
+.social-btn-inst::before {
+  width: 17px;
+  height: 17px;
+  background-position: -20px -1234px;
 }
 .callback-text {
   display: inline-block;
@@ -1332,13 +1381,40 @@ body {
 .breadcrumb-item {
   display: inline-block;
   vertical-align: top;
+  position: relative;
 }
 .breadcrumb-link {
+  padding-left: 40px;
   font-size: 13px;
   line-height: 18px;
   text-decoration: none;
   text-transform: uppercase;
   color: #000;
+}
+.breadcrumb-item:nth-child(n+2)::before {
+  content: "";
+  display: block;
+  position: absolute;
+  vertical-align: top;
+  cursor: pointer;
+  top: 4px;
+  left: 16px;
+  background: url('../img/sprite.png') no-repeat;
+  width: 8px;
+  height: 12px;
+  background-position: -20px -1681px;
+}
+.breadcrumb-item:first-child {
+  content: "";
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  background: url('../img/sprite.png') no-repeat;
+  width: 15px;
+  height: 18px;
+  background-position: -20px -1179px;
 }
 .product-group {
   background-color: #f2f6f8;
@@ -1365,14 +1441,20 @@ body {
   line-height: 18px;
   text-transform: uppercase;
 }
-
 .form-producers, .supply-producers {
   font-size: 0;
+}
+.form-producers {
+  border-bottom: 1px solid #e5e5e5;
 }
 fieldset {
   border: none;
   margin: 0;
   padding: 0;
+}
+.form-range {
+  padding-bottom: 35px;
+    border-bottom: 1px solid #e5e5e5;
 }
 .form-heading {
   font-size: 17px;
@@ -1380,10 +1462,88 @@ fieldset {
   font-weight: 700;
   text-transform: uppercase;
 }
-.form-item {
+input[type="checkbox"] + label, input[type="radio"] + label {
   display: block;
-  font-size: 14px;
+  margin-bottom: 23px;
+  margin-top: 23px;
+  padding-left: 35px;
+  font-size: 15px;
+  text-transform: uppercase;
+  line-height: 20px;
+  position: relative;
 }
+input[type="checkbox"], input[type="radio"] {
+  display: none;
+}
+input[type="checkbox"] + label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  background: url('../img/sprite.png') no-repeat;
+  width: 23px;
+  height: 23px;
+  background-position: -20px -356px;
+}
+input[type="checkbox"] + label:hover::before {
+  width: 23px;
+  height: 23px;
+  background-position: -20px -482px;
+}
+input[type="checkbox"]:checked + label::before{
+  width: 27px;
+  height: 23px;
+  background-position: -20px -545px;
+}
+input[type="checkbox"]:checked + label:hover::before {
+  width: 27px;
+  height: 23px;
+  background-position: -20px -671px;
+}
+input[type="radio"] + label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  background: url('../img/sprite.png') no-repeat;
+  width: 25px;
+  height: 25px;
+  background-position: -20px -734px;
+}
+input[type="radio"] + label:hover::before {
+  width: 25px;
+  height: 25px;
+  background-position: -20px -1059px;
+}
+input[type="radio"]:checked + label::before{
+  width: 25px;
+  height: 25px;
+  background-position: -20px -864px;
+}
+input[type="radio"]:checked + label:hover::before {
+  width: 25px;
+  height: 25px;
+  background-position: -20px -994px;
+}
+.filter-form input[type="submit"] {
+  display: inline-block;
+  width: 140px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  margin-top: 55px;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  box-sizing: border-box;
+  background-color: #fff;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
 .sort {
   display: block;
   margin-bottom: 20px;
