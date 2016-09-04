@@ -1725,11 +1725,11 @@ input[type="radio"]:checked + label:hover::before {
 .catalog {
   margin-bottom: 60px;
 }
-.catalog .new-price {
+/*.catalog .new-price {
   margin-top: 6px;
-}
+}*/
 .catalog-items {
-  margin-bottom: 31px;
+  margin-bottom: 35px;
 }
 .pagination {
  font-size: 0;
