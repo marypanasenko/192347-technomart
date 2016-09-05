@@ -35,8 +35,8 @@ body {
 .logo-text {
   display: block;
   margin-left: 55px;
-  margin-top: 12px;
-  margin-bottom: 8px;
+  margin-top: 11px;
+  margin-bottom: 7px;
   font-family: "Cuprum", "Arial", sans-serif;
   text-transform: uppercase;
   text-decoration: none;
@@ -61,6 +61,7 @@ body {
   color: #ffffff;
   background: transparent url("../img/sprite.png") no-repeat;
   background-position: -2px -1721px;
+  outline: none;
 }
 
 
@@ -123,7 +124,7 @@ body {
   font-family: "Cuprum", "Arial", sans-serif;
   text-decoration: none;
   color: #ffffff;
-  padding-top: 13px;
+  padding-top: 11px;
   padding-bottom: 13px;
   box-sizing: border-box;
 }
@@ -152,17 +153,20 @@ body {
 .bookmark a:hover::before {
   width: 14px;
   height: 16px;
-  background-position: -20px -300px;
+  background-position: -21px -299px;
 }
 .bookmark a:active::before {
   width: 14px;
   height: 16px;
-  background-position: -20px -188px;
+  background-position: -21px -187px;
 }
 .basket a {
   padding-left: 49px;
   box-sizing: border-box;
   position: relative;
+}
+.red-basket {
+  background-color: #ee3643;
 }
 .basket a::before {
   content: "";
@@ -282,10 +286,10 @@ body {
   background-position: -22px -1371px;
 }
 .singin:hover::before {
-  background-position: -20px -1485px;
+  background-position: -22px -1485px;
 }
 .singin:active::before {
-  background-position: -20px -1428px;
+  background-position: -22px -1428px;
 }
 .signup {
   display: inline-block;
@@ -533,22 +537,39 @@ body {
   height: 40px;
   background-position: -20px -1601px;
 }
+.slide-1 {
+  display: block;
+}
+.slide-2 {
+  display: none;
+}
 #btn-1:checked ~ .slides .slide-1 {
-  left: 0;
+  display: block;
 }
 
 #btn-1:checked ~ .slides .slide-2 {
-  left: 620px;
+  display: none;
 }
 
 #btn-2:checked ~ .slides .slide-1 {
-  left: -620px;
+  display: none;
 }
 
 #btn-2:checked ~ .slides .slide-2 {
-  left: 0;
+  display: block;
 }
-#btn-1:checked ~ .slider-controls label[for="btn-1"],
+.slider-controls label[for="btn-1"] {
+  background-color: #ee3643;
+}
+#btn-1:checked ~ .slider-controls label[for="btn-1"] {
+  background-color: #ee3643;
+}
+#btn-1:checked ~ .slider-controls label[for="btn-2"] {
+  background-color: #fff;
+}
+#btn-2:checked ~ .slider-controls label[for="btn-1"] {
+  background-color: #fff;
+}
 #btn-2:checked ~ .slider-controls label[for="btn-2"] {
   background-color: #ee3643;
 }
@@ -1502,6 +1523,7 @@ body {
   box-sizing: border-box;
   background: #fff url("../img/sprite.png") no-repeat;
   background-position: -5px -1948px;
+  cursor: pointer;
 }
 .user:hover {
   background-position: -5px -2064px;
@@ -1552,6 +1574,96 @@ body {
   width: 220px;
   margin-right: 20px;
 }
+/*ПОЛЗУНКИ*/
+.range-filter {
+  width: 220px;
+  margin: 15px auto;
+  margin-bottom: 25px;
+}
+.range-controls {
+  position: relative;
+  height: 41px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-bottom: 8px;
+  border-radius: 3px;
+  background: #f7f3ec;
+}
+.range-controls .scale {
+  height: 2px;
+  background: #d7dcde;
+}
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: #00ca74;
+}
+.range-controls .toggle {
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  width: 4px;
+  height: 4px;
+  cursor: pointer;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  background: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+}
+.range-controls .toggle-min {
+  left: 20px;
+}
+.range-controls .toggle-max {
+  left: 160px;
+}
+
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls label {
+  font-size: 16px;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 50%;
+}
+
+.max-price {
+  text-align: right;
+  position: relative;
+}
+.max-price::before {
+  content: "";
+  position: absolute;
+  top: 19px;
+  left: -4px;
+  width: 9px;
+  height: 1px;
+  background-color: #444444;
+}
+
+.price-controls input {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 400;
+  font-family: "PT Sans", "Arial", sans-serif;
+  width: 60px;
+  margin-left: 0;
+  padding: 10px 17px;
+  padding-left: 18px;
+  text-align: center;
+  color: #283136;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  background: #f7f3ec;
+}
+
+
+
+
 .sort-catalog {
   float: right;
   width: 700px;
@@ -1634,6 +1746,9 @@ body {
   font-size: 0;
 }
 .form-producers {
+  margin-top: 16px;
+  margin-bottom: 17px;
+padding-bottom: 2px;
   border-bottom: 1px solid #e5e5e5;
 }
 fieldset {
@@ -1642,8 +1757,8 @@ fieldset {
   padding: 0;
 }
 .form-range {
-  padding-bottom: 35px;
-    border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 0;
+  border-bottom: 1px solid #e5e5e5;
 }
 .form-heading {
   font-size: 17px;
@@ -1653,8 +1768,8 @@ fieldset {
 }
 input[type="checkbox"] + label, input[type="radio"] + label {
   display: block;
-  margin-bottom: 23px;
-  margin-top: 23px;
+  margin-bottom: 20px;
+  margin-top: 14px;
   padding-left: 35px;
   font-size: 15px;
   text-transform: uppercase;
@@ -1723,7 +1838,7 @@ input[type="radio"]:checked + label:hover::before {
   width: 140px;
   padding-top: 9px;
   padding-bottom: 9px;
-  margin-top: 55px;
+  margin-top: 59px;
   border: 1px solid #e5e5e5;
   border-radius: 3px;
   box-sizing: border-box;
