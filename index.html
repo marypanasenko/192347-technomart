@@ -241,9 +241,10 @@
       <div class="index-content-contact">
         <h4 class="contact-title">Контакты</h4>
         <p class="contact-text">Вы можете забрать товар сами, заехав в наш офис:</p>
-        <img src="img/map-small.jpg"  height="158" width="300" alt="map-small">
-        <div class="full-map">
+        <img class="map-small" src="img/map-small.jpg"  height="158" width="300" alt="map-small">
+        <div class="full-map" id="map-canvas">
           <button class="full-map-close" type="button" title="Закрыть">Закрыть</button>
+          <iframe src="https://www.google.com/maps/d/embed?mid=1-OWjqOrj0KYKomPGYwDl2Xwn6IY"></iframe>
         </div>
         <a href="#" class="contact-btn">Заблудились? Напишите нам!</a>
       </div>
@@ -297,11 +298,11 @@
       <div class="form-datas">
         <div class=form-data-name>
           <label for="name">Ваше имя:</label>
-          <input id="name" class="icon-user" type="text" name="name" placeholder="Представтесь, пожалуйста" required>
+          <input id="name" class="icon-user" type="text" name="name" placeholder="Представтесь, пожалуйста">
         </div>
         <div class="form-data-email">
           <label for="email"> Ваш e-mail:</label>
-          <input id="email" class="icon-email" type="text"  name="email" placeholder="Для отправки ответа" required>
+          <input id="email" class="icon-email" type="text"  name="email" placeholder="Для отправки ответа">
         </div>
         <div class="form-data-comment">
           <label for="comment-field">Текст письма:</label>
@@ -313,5 +314,18 @@
       </div>
     </form>
   </div>
+  <div class="cart">
+    <button class="cart-close" type="button" title="Закрыть">Закрыть</button>
+    <div class="cart-message">
+      <div class="checkpoint"></div>
+      <span class="cart-text">Товар добавлен в корзину!</span>
+    </div>
+    <div class="cart-buttons">
+      <a href="#" class="make-order">Оформить заказ</a>
+      <a href="#" class="continue-shopping">Продолжить покупки</a>
+    </div>
+  </div>
+  <!-- <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script> -->
+  <script src="scripts.js"></script>
 </body>
 </html>
