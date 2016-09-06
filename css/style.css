@@ -1524,6 +1524,7 @@ body {
   background: #fff url("../img/sprite.png") no-repeat;
   background-position: -5px -1948px;
   cursor: pointer;
+  position: relative;
 }
 .user:hover {
   background-position: -5px -2064px;
@@ -1532,6 +1533,27 @@ body {
   color: #cacaca;
   background-position: -5px -2006px;
 }
+.user::after {
+  content: "";
+  position: absolute;
+  background: url("../img/sprite.png") no-repeat;
+  width: 21px;
+  height: 17px;
+  background-position: -20px -2668px;
+  top: 13px;
+  right: 10px;
+}
+.user:hover::after {
+  width: 21px;
+  height: 17px;
+  background-position: -20px -2725px;
+}
+.user:active::after {
+  width: 21px;
+  height: 17px;
+  background-position: -20px -2782px;
+}
+
 .orders {
   display: inline-block;
   padding-left: 18px;
