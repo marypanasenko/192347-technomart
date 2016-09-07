@@ -1120,10 +1120,11 @@ body {
   margin-top: 31px;
 }
 .full-map {
-  display: none;
-  top: -49px;
-  right: 0;
-  position: absolute;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  left: -10000px;
   width: 940px;
   height: 446px;
   -webkit-box-shadow: 0 0px 25px #abafb8;
@@ -2054,7 +2055,11 @@ input[type="radio"]:checked + label:hover::before {
 }
 /*cart*/
 .cart {
-  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  left: -10000px;
   width: 620px;
   height: 282px;
   position: fixed;
@@ -2062,9 +2067,6 @@ input[type="radio"]:checked + label:hover::before {
   border-top: 7px solid #ee3643;
   box-sizing: border-box;
   background: #fff;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 .cart-text {
   margin-top: 19px;
@@ -2182,16 +2184,16 @@ input[type="radio"]:checked + label:hover::before {
 
 @keyframes bounce {
   0%   {
-    transform: translateX(-2000px);
+    transform: translate(-2000px, -50%);
   }
   70%  {
-    transform: translateX(30px);
+    transform: translateX(30px, -50%);
   }
   90%  {
-    transform: translateX(-10px);
+    transform: translateX(-10px, -50%);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(-50%, -50%);
   }
 }
 @keyframes shake {
