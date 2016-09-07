@@ -26,13 +26,13 @@ var mapclose = fullmap.querySelector(".full-map-close");
 if (mapsmall) {
 mapsmall.addEventListener("click", function(event) {
   event.preventDefault();
-  fullmap.classList.add("modal-content-show");
+  fullmap.classList.add("map-content-show");
   });
 }
 if (mapclose) {
 mapclose.addEventListener("click", function(event) {
   event.preventDefault();
-  fullmap.classList.remove("modal-content-show");
+  fullmap.classList.remove("map-content-show");
   });
 }
 
