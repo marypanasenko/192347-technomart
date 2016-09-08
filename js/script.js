@@ -2,7 +2,6 @@ var mapsmall = document.querySelector(".map-small");
 var fullmap = document.querySelector(".full-map");
 
 if (fullmap) {
-
 var mapclose = fullmap.querySelector(".full-map-close");
 }
 
@@ -18,7 +17,6 @@ mapclose.addEventListener("click", function(event) {
   fullmap.classList.remove("modal-content-show");
   });
 }
-
 
 var contactbtn = document.querySelector(".contact-btn");
 var popup = document.querySelector(".write-us");
