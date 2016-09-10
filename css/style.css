@@ -1,5 +1,5 @@
 body {
-  min-height: 960px;
+  min-width: 960px;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
@@ -454,14 +454,14 @@ body {
   background-image: url(../img/slide1.jpg);
   background-position: center top;
   background-repeat: no-repeat;
-  background-color: #fff;
+  background-color: #8c8580;
 }
 .slide-2 {
   min-height: 266px;
   background-image: url(../img/slide2.jpg);
   background-position: center top;
   background-repeat: no-repeat;
-  background-color: #fff;
+  background-color: #6e4941;
 }
 .slide-1, .slide-2 {
   position: absolute;
@@ -1891,6 +1891,9 @@ input[type="radio"]:checked:disabled + label::before {
 }
 .filter-form input[type="submit"]:active {
   border: 1px solid #ee3643;
+}
+.filter-form input[type=submit]:focus {
+  outline: 0;
 }
 .sort {
   display: block;
