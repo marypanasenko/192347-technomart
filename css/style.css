@@ -1305,13 +1305,13 @@ body {
   margin-right: 5px;
   position: relative;
 }
-.social-btn:nth-child(3n){
+.social-btn:nth-child(3n) {
   margin-right: 0;
 }
-.social-btn:hover{
+.social-btn:hover {
   background-color: #ee3643;
 }
-.social-btn:active{
+.social-btn:active {
   background-color: #ee3643;
 }
 .social-btn::before {
@@ -1356,7 +1356,7 @@ body {
   line-height: 18px;
   color: #fff;
 }
-.callback-mail, .madeby-site{
+.callback-mail, .madeby-site {
   text-decoration: none;
   color: #ffd180;
 }
